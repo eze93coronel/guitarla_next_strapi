@@ -1,11 +1,13 @@
-import Layout from "../../components/Layout";
+
 import Image from 'next/image'
+import Layout from "../../components/Layout";
 import {formatearFecha} from '../../helpers'
 import styles from '../../styles/Entrada.module.css'
-import { unstable_renderSubtreeIntoContainer } from "react-dom/cjs/react-dom.development";
+
 const EntradaBlog = ({entrada}) => {
 
-const {contenido,imagen,published_at,titulo}= entrada
+const {contenido,imagen,published_at,titulo}= entrada[0];
+
   return (
     <Layout
      pagina={titulo}
@@ -53,7 +55,7 @@ export async function getStaticProps ({params : {url}}){
 
   return {
     props:{
-   entrada : entrada[0]
+   entrada 
     }
  }
 }

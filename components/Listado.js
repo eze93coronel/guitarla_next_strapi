@@ -14,4 +14,4 @@ import Guitarra from '../components/Guitarra'
   )
 }
 
-export default Listado
+export default Listado;

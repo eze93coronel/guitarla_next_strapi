@@ -3,8 +3,8 @@ import Image from 'next/image'
 import {formatearFecha} from '../helpers'
 import  styles from '../styles/Entrada.module.css'
 const Entrada = ({entrada}) => {
-    const {titulo,resumen,imagen,published_at,id,url} = entrada
-    console.log(imagen.url)
+    const {titulo,resumen,imagen,published_at,id,url} = entrada;
+    
     return ( 
 
       <article>
