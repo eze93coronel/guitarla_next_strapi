@@ -10,7 +10,11 @@ export default function Home({guitarras,curso,entradas}) {
   return (
     
    
-    <Layout pagina="inicio">
+    <Layout
+    
+    pagina="inicio"
+    guitarra={guitarras[3]}
+    >
       <main className="contenedor"> 
          <h1 className="heading">Nuestra Coleccion</h1>
          <Listado 
